@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <title>Student Database</title>
+  </head>
+  <body>
+    <div id="main-div">
+      <div class="left-div">
+        <form onsubmit="studentFormSubmit(event)">
+          <input type="text" placeholder="Enter name" id="name" />
+          <input type="text" placeholder="Enter batch" id="batch" />
+          <input type="text" placeholder="Enter section" id="section" />
+          <input type="text" placeholder="Enter eval scroe" id="eval_score" />
+          <input type="text" placeholder="Enter image url" id="image" />
+          <input type="submit" value="ADD STUDENTS" />
+        </form>
+        <div>
+          <h3>SORT BASE ON SCORE</h3>
+          <button onclick="sortLowToHigh()">SORT LOW TO HIGHT</button>
+          <button onclick="sortHighToLow()">SORT HIGH TO LOW</button>
+        </div>
+        <div>
+          <h3>Filter By Score</h3>
+          <button onclick="filterByScoreGreater5()">Score >= 5</button>
+          <button onclick="filterByScoreLess5()">Score <= 5</button>
+        </div>
+      </div>
+      <div class="right-div" id="parent">
+        <!-- <div class="card">
+          <img
+            src="https://png.pngtree.com/png-vector/20220709/ourmid/pngtree-businessman-user-avatar-wearing-suit-with-red-tie-png-image_5809521.png"
+            alt=""
+          />
+          <p>NAME : Furkan</p>
+          <p>SCORE : 3</p>
+          <p>BATCH : ninja</p>
+          <p>SECTION : A</p>
+          <div>
+            <button>REMOVE</button>
+            <button>UPDATA</button>
+          </div>
+        </div> -->
+      </div>
+    </div>
+    <script src="./src/scripts/index.js"></script>
+  </body>
+</html>

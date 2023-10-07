@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#main-div {
+  display: grid;
+  border: 2px solid blue;
+  grid-template-columns: 400px auto;
+  margin-top: 10px;
+}
+.left-div {
+  border: 1px solid green;
+  height: 100vh;
+}
+.right-div {
+  border: 1px solid red;
+  /* height: 100vh; */
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+.card {
+  width: 200px;
+  border: 1px solid orange;
+  text-align: center;
+  line-height: 2;
+  box-shadow: 0 0 3px black;
+  padding: 20px 10px;
+  /* height: 300px; */
+  /* height: fit-content; */
+
+
+}
+.card > img {
+  width: 100px;
+  height: 100px;
+}
+.card > div {
+  display: flex;
+  justify-content: space-between;
+}
